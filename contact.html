@@ -3,38 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title: 50–60 ký tự, chứa từ khoá chính -->
     <title>Đặng Minh Thuận - Liên hệ</title>
+    <!-- Description: 150–160 ký tự, tóm tắt nội dung -->
+    <meta name="description" content="Kết nối với Đặng Minh Thuận, sinh viên Kỹ thuật Phần mềm ĐH Gia Định. Mọi cơ hội hợp tác, thực tập hoặc trao đổi công việc xin vui lòng gửi thông tin tại đây.">
+    <!-- Author & Keywords -->
+    <meta name="author" content="Đặng Minh Thuận">
+    <meta name="keywords" content="liên hệ Đặng Minh Thuận, contact dang minh thuan, tuyen dung dang minh thuan, ket noi lap trinh vien">
+    <!-- Open Graph – chia sẻ lên Zalo / Facebook đẹp hơn -->
+    <meta property="og:title" content="Đặng Minh Thuận – Kết Nối & Liên Hệ">
+    <meta property="og:description" content="Kết nối với Đặng Minh Thuận để trao đổi về các cơ hội thực tập, việc làm hoặc dự án phát triển Web tiềm năng.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head>        
 <body>
-    <main>
+    <header>
         <nav>
             <ul>
-                <a href="index.html">Trang chủ</a><a> |</a>
-                <a href="about.html">Giới thiệu</a><a> |</a>
-                <a href="contact.html">Liên hệ</a><a> |</a>
-                <a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a></li>
             </ul>
         </nav>
-        <header>
-            <h1>Liên hệ với tôi</h1>
-        </header>
-        <section id="Thông tin liên hệ">
-            <h2>Thông tin liên hệ</h2>
-            <address>
-                <p>Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a></p>
-                <p>Tel: 0363 856 521<br></p>
-            </address>
-        </section>  
-    </main>
-    <footer>
-        <h2>Liên hệ</h2>
-        <address>
-            Tel: 0363 856 521<br>
-            Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a>
-        </address>
+        <h1>Liên Hệ Với Đặng Minh Thuận</h1> <!-- BỔ SUNG: Đúng 1 thẻ h1 duy nhất cho toàn trang -->
+    </header>
 
-        <p>&copy;<time datetime="2026-09-15"> 2026 Đặng Minh Thuận. All rights reserved.</p>
+    <main>
+        <section id="form-lien-he">
+            <h2>Gửi tin nhắn trực tiếp</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    
+                    <label for="fullname">Họ và tên: *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên đầy đủ" required minlength="2" maxlength="100">
+                   
+                    <label for="dob">Ngày sinh: *</label>
+                    <input type="date" id="dob" name="dob" required> 
+
+                    <label for="email">Email: *</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="09xx xxx xxx" pattern="[0-9]{10,11}" title="Nhập 10–11 chữ số">
+                
+                    <!-- BỔ SUNG: Tạo thêm input trường học và liên kết với datalist bên dưới qua thuộc tính list -->
+                    <label for="school">Trường học / Tổ chức:</label>
+                    <input type="text" id="school" name="school" list="school-list" placeholder="Chọn hoặc nhập tên trường">
+                    <datalist id="school-list">
+                        <option value="Đại học Gia Định">
+                        <option value="Đại học Bách Khoa">
+                        <option value="Đại học Khoa học Tự nhiên">
+                        <option value="Đại học Kinh tế">
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+                    
+                    <label for="subject">Chủ đề:</label>
+                    <select id="subject" name="subject">
+                        <option value="">-- Chọn chủ đề --</option>
+                        <option value="support">Hỗ trợ kỹ thuật</option>
+                        <option value="study">Học tập / Trao đổi</option>
+                        <option value="other">Khác</option>
+                    </select>
+                    
+                    <!-- TỐI ƯU: Thay thế fieldset lồng nhau thành thẻ div bọc để gọn code và đúng ngữ nghĩa -->
+                    <div class="contact-via-group">
+                        <p>Ưu tiên liên hệ qua:</p>
+                        <input type="radio" id="via-email" name="contact-via" value="email" checked>
+                        <label for="via-email">Email</label>
+                        
+                        <input type="radio" id="via-phone" name="contact-via" value="phone">
+                        <label for="via-phone">Điện thoại</label>
+                        
+                        <input type="radio" id="via-zalo" name="contact-via" value="zalo">
+                        <label for="via-zalo">Zalo</label>
+                    </div>
+                    
+                    <br>
+                    <label for="message">Tin nhắn: *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung tin nhắn..." required minlength="10" maxlength="500"></textarea>
+                    
+                    <br>
+                    <label>
+                        <input type="checkbox" name="agree" required> Tôi đồng ý với <a href="#">điều khoản sử dụng</a> *
+                    </label>
+                </fieldset>
+                
+                <div class="btn-group">
+                    <button type="submit">Gửi tin nhắn</button>
+                    <button type="reset">Xoá và nhập lại</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
     </footer>
 </body>
 </html>

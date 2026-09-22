@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Đặng Minh Thuận - Giới thiệu</title>
+    <!-- Title: 50–60 ký tự, chứa từ khoá chính -->
+    <title>Đặng Minh Thuận - Giới thiệu bản thân</title>
+    <!-- Description: 150–160 ký tự, tóm tắt nội dung -->
+    <meta name="description" content="Tìm hiểu về Đặng Minh Thuận, sinh viên chuyên ngành IoT tại Đại học Gia Định. Khám phá tư duy công nghệ, kỹ năng HTML/CSS/JS và lộ trình phát triển phần mềm.">
+    <!-- Author & Keywords -->
+    <meta name="author" content="Đặng Minh Thuận">
+    <meta name="keywords" content="về Đặng Minh Thuận, dang minh thuan gdu, sinh vien iot gia dinh, ky nang lap trinh, hoc van dang minh thuan">
+    <!-- Open Graph – chia sẻ lên Zalo / Facebook đẹp hơn -->
+    <meta property="og:title" content="Đặng Minh Thuận – Về Tôi & Kỹ Năng Chuyên Môn">
+    <meta property="og:description" content="Tìm hiểu chi tiết về tư duy công nghệ, thế mạnh HTML/CSS/JS và định hướng phát triển phần mềm của Đặng Minh Thuận.">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://github.com">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
+
+    <header>
         <nav>
             <ul>
-                <a href="index.html">Trang chủ</a><a> |</a>
-                <a href="about.html">Giới thiệu</a><a> |</a>
-                <a href="contact.html">Liên hệ</a><a> |</a>
-                <a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a></li>
             </ul>
         </nav>
+        <h1>Giới Thiệu Về Đặng Minh Thuận</h1> <!-- Tối ưu nội dung H1 duy nhất hiển thị đúng bản chất trang -->
+    </header>
 
-        <header>
-            <h1><strong>Đặng Minh Thuận</strong></h1>
-        </header>
-        <section id="Thông tin cá nhân">
+    <main>
+        <section id="thong-tin-ca-nhan"> <!-- Sửa ID thành chuỗi viết thường không dấu, không khoảng trắng -->
             <h2>Về tôi</h2>
-            <p>Xin chào, tôi là Đặng Minh Thuận, sinh viên năm 3 Khoa Công nghệ thông tin chuyên ngành IoT</p>
+            <p>Xin chào, tôi là Đặng Minh Thuận, sinh viên năm 3 Khoa Công nghệ thông tin chuyên ngành IoT tại trường Đại học Gia Định.</p>
             <p>Ngày sinh: 13/01/2005</p>
             <p>Quê quán: Long Khánh, Đồng Nai</p>
-            <p>Hiện đang theo học tại trường Đại học Gia Định</p>
+            
             <figure>
-                <img src="images/anhdaidien.jpg" alt="Đặng Minh Thuận sinh viên năm 3 trường Đại học Gia Định" width="200">
+                <img src="images/anhdaidien.jpg" alt="Chân dung Đặng Minh Thuận - Sinh viên năm 3 trường Đại học Gia Định" width="200">
                 <figcaption>Đặng Minh Thuận</figcaption>
             </figure>
+
             <h3>Một số ngôn ngữ lập trình đã học</h3>
             <dl>
                 <dt>Python</dt>
@@ -42,7 +55,8 @@
                 <dd>Ngôn ngữ lập trình mạnh mẽ, được sử dụng rộng rãi trong phát triển phần mềm hệ thống, trò chơi điện tử, ứng dụng nhúng và các ứng dụng yêu cầu hiệu suất cao.</dd>
             </dl>
         </section>
-        <section id="Sở thích">
+
+        <section id="so-thich">
             <h2>Sở thích</h2>
             <ul>
                 <li>Chơi game</li>
@@ -50,7 +64,8 @@
                 <li>Xem phim</li>
             </ul>
         </section>
-        <section id="Kĩ năng">
+
+        <section id="ki-nang">
             <h2>Kĩ năng lập trình</h2>
             <ul>
                 <li>Python</li>
@@ -60,7 +75,8 @@
                 <li>Git & GitHub</li>
             </ul>
         </section>
-        <section id="Lộ trình học tập">
+
+        <section id="lo-trinh-hoc-tap">
             <h2>Lộ trình học tập</h2>
             <ol>
                 <li>Tốt nghiệp</li>
@@ -68,49 +84,52 @@
                 <li>Một sản phẩm có thể đưa lên thị trường</li>
             </ol>
         </section>
-        <section>
+
+        <section id="ke-hoach-hoc-tap">
             <table>
                 <caption>Bảng môn học học kỳ này</caption>
-                    <thead>
-                        <tr>
-                            <th>Môn học</th>
-                            <th>Số TC</th>
-                            <th>Điểm mục tiêu</th>
-                        </tr>
-                    </thead>
+                <thead>
+                    <tr>
+                        <th id="th-mon">Môn học</th>
+                        <th id="th-tc">Số TC</th>
+                        <th id="th-diem">Điểm mục tiêu</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <td>Lập trình Web</td>
-                        <td>3</td>
-                        <td>8.0</td>
+                        <td headers="th-mon">Lập trình Web</td>
+                        <td headers="th-tc">3</td>
+                        <td headers="th-diem">8.0</td>
                     </tr>
                     <tr>
-                        <td>Internet vạn vật nâng cao</td>
-                        <td>3</td>
-                        <td>7.5</td>
+                        <td headers="th-mon">Internet vạn vật nâng cao</td>
+                        <td headers="th-tc">3</td>
+                        <td headers="th-diem">7.5</td>
                     </tr>
                     <tr>
-                        <td>Pháp luật đại cương</td>
-                        <td>2</td>
-                        <td>7.0</td>
+                        <td headers="th-mon">Pháp luật đại cương</td>
+                        <td headers="th-tc">2</td>
+                        <td headers="th-diem">7.0</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="2">Tổng tín chỉ</td>
-                        <td>9 TC</td>
+                        <td colspan="2" id="th-tong">Tổng tín chỉ</td>
+                        <td headers="th-diem th-tong">9 TC</td>
                     </tr>
                 </tfoot>
             </table>
         </section>
     </main>
+
     <footer>
-        <h2>Liên hệ</h2>
+        <h2>Thông tin liên hệ nhanh</h2>
         <address>
             Tel: 0363 856 521<br>
             Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a>
         </address>
-        <p>&copy;<time datetime="2026-09-15"> 2026 Đặng Minh Thuận. All rights reserved.</p>
+        <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

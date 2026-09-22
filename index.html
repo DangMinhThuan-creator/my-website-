@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặng Minh Thuận - Trang chủ</title>
+    <!-- Title: 50–60 ký tự, chứa từ khoá chính -->
+    <title>Đặng Minh Thuận - Trang chủ Portfolio</title>
+    <!-- Description: 150–160 ký tự, tóm tắt nội dung -->
+    <meta name="description" content="Portfolio cá nhân của Đặng Minh Thuận, sinh viên Kỹ thuật Phần mềm tại ĐH Gia Định. Chia sẻ dự án và kỹ năng lập trình Web với HTML5, CSS3, JavaScript.">
+    <!-- Author & Keywords -->
+    <meta name="author" content="Đặng Minh Thuận">
+    <meta name="keywords" content="Đặng Minh Thuận, portfolio Đặng Minh Thuận, portfolio sinh viên, lập trình web, KTPM ĐH Gia Định, HTML5, CSS3, JavaScript">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Đặng Minh Thuận | Portfolio Cá Nhân – Software Engineer">
+    <meta property="og:description" content="Khám phá không gian lập trình của Đặng Minh Thuận, sinh viên Kỹ thuật Phần mềm ĐH Gia Định. Nơi tổng hợp dự án Web với HTML5, CSS3, JavaScript.">
+    <meta property="og:image" content="https://github.com"> <!-- Ảnh đại diện lấy từ GitHub của bạn -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <main>
+<body> <!-- Đã chuyển body lên trên cùng để bọc toàn bộ nội dung -->
+
+    <header>
         <nav>
             <ul>
-                <a href="index.html">Trang chủ</a><a> |</a>
-                <a href="about.html">Giới thiệu</a><a> |</a>
-                <a href="contact.html">Liên hệ</a><a> |</a>
-                <a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a></li>
             </ul>
         </nav>
-        <header>
-            <h1><strong>Đặng Minh Thuận</strong></h1>
-        </header>
-        <section id="Thông tin cá nhân">
+        <h1>Đặng Minh Thuận</h1> <!-- Giữ duy nhất 1 thẻ h1 chuẩn SEO -->
+    </header>
+
+    <main>
+        <section id="thong-tin-ca-nhan"> <!-- ID nên viết liền không dấu để làm anchor link tốt hơn -->
             <h2>Thông tin cá nhân</h2>
             <p>Ngày sinh: 13/01/2005</p>
             <p>Quê quán: Long Khánh, Đồng Nai</p>
             <p>Ngành học: Công nghệ thông tin</p>
             <p>Năm học: 2023-2026</p>
         </section>
-        <section id="Sở thích">
+
+        <section id="so-thich">
             <h2>Sở thích</h2>
             <ul>
                 <li>Chơi game</li>
@@ -34,7 +48,8 @@
                 <li>Xem phim</li>
             </ul>
         </section>
-        <section id="Mục tiêu học kỳ này">
+
+        <section id="muc-tieu">
             <h2>Mục tiêu học kỳ này</h2>
             <ol>
                 <li>Tốt nghiệp</li>
@@ -43,14 +58,16 @@
             </ol>
         </section>
     </main>
+
     <footer>
         <h2>Liên hệ</h2>
         <address>
             Tel: 0363 856 521<br>
             Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a>
         </address>
-
-        <p>&copy;<time datetime="2026-09-15"> 2026 Đặng Minh Thuận. All rights reserved.</p>
+        <!-- Đã sửa lỗi đóng thẻ time và đồng bộ bản quyền -->
+        <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
     </footer>
-</body>    
+
+</body> 
 </html>
