@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@media (min-width: 768px) {
+    .page-layout {grid-template-areas: "sidebar main";grid-template-columns: 220px 1fr;}
+    .sidebar {display: block;}
+}
+@media (min-width: 1024px) {
+    .page-layout {grid-template-columns: 240px 1fr;}
+}
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {padding: 12px 20px;
+        h2 {font-size: 1.2rem;margin: 0 0 6px;}
+        p {margin: 0 0 8px;}
+    }
+    .card-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 10px;}
+}

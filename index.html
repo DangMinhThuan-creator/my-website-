@@ -18,20 +18,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> <!-- Đã chuyển body lên trên cùng để bọc toàn bộ nội dung -->
-
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="about.html">Giới thiệu</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
-                <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a></li>
-            </ul>
-        </nav>
+        <div class='navbar'>
+            <div class='logo'>
+                <img src="images/logo.png" alt="Logo Đặng Minh Thuận" width="100" height="100">
+            </div>
+            <div class='nav-link'>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
         <h1>Đặng Minh Thuận</h1> <!-- Giữ duy nhất 1 thẻ h1 chuẩn SEO -->
     </header>
 
     <main>
+        <section class='hero'>
+            <h2>Chào mừng đến với Portfolio của tôi</h2>
+            <p>Khám phá các dự án và kỹ năng lập trình Web của tôi.</p>
+            <div class='card-grid'>
+                <div class='card'>
+                    <h3>Dự án Web</h3>
+                    <p>Khám phá các dự án Web mà tôi đã thực hiện, từ HTML5, CSS3 đến JavaScript.</p>
+                </div>
+                <div class='card'>
+                    <h3>Kỹ năng lập trình</h3>
+                    <p>Tìm hiểu về các kỹ năng lập trình mà tôi đã học và áp dụng trong các dự án.</p>
+                </div>
+                <div class='card'>
+                    <h3>Liên hệ</h3>
+                    <p>Hãy liên hệ với tôi để trao đổi về cơ hội hợp tác hoặc dự án mới.</p>    
+                </div>
+            </div>
+        </section>
         <section id="thong-tin-ca-nhan"> <!-- ID nên viết liền không dấu để làm anchor link tốt hơn -->
             <h2>Thông tin cá nhân</h2>
             <p>Ngày sinh: 13/01/2005</p>
@@ -60,13 +82,15 @@
     </main>
 
     <footer>
-        <h2>Liên hệ</h2>
-        <address>
+        <div class="footer-left">
+            <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
+        </div>
+            <div class="footer-right">
+            <address>
             Tel: 0363 856 521<br>
             Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a>
-        </address>
-        <!-- Đã sửa lỗi đóng thẻ time và đồng bộ bản quyền -->
-        <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
+            </address>
+        </div>
     </footer>
 
 </body> 

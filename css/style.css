@@ -1,37 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-font-family: Arial, sans-serif;
-background-color: #405458;
-}
-h1 {
-color: #fdf6f6;
-text-align: center;
-}
-h2 {
-color: #ff0000;
-text-align: left;
-border-bottom: 2px solid #000000;
-}
-p {
-line-height: 1.6;
-max-width: 700px;
-}
-figure {
-color: #fdf6f6;
-text-align: center;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d7d7d7;
 }
 
 a {
-    color: #ff0000;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #ff0000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #1e00ff;
+  text-decoration: underline;
 }
 
-a:hover {
-    color: #1e00ff;
-    text-decoration: underline;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+h1 {
+  color: #848484;
+  text-align: center;
+}
+
+h2 {
+  color: #ff0000;
+  text-align: left;
+  border-bottom: 2px solid #000;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+figure {
+  color: #fdf6f6;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 250px;
+  color: #333;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: navy;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: #e0f2fe;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #3e6987;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #3e6987;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #7c3aed;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #93c5fd;
+  margin-left: 24px;
+}
+.nav-link a:hover {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background: #1d6fa4;
+  color: white;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-areas: "main";
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.page-layout main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: none;
+  background: #f1f5f9;
+  padding: 24px;
+  border-radius: 8px;
+  align-self: start;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: #93c5fd;
+}
+footer a:hover {
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-layout {
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 220px 1fr;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 240px 1fr;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    padding: 12px 20px;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+    margin: 0 0 6px;
+  }
+  .hero p {
+    margin: 0 0 8px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

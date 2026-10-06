@@ -18,117 +18,137 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="about.html">Giới thiệu</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
-                <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub Repository</a></li>
-            </ul>
-        </nav>
-        <h1>Giới Thiệu Về Đặng Minh Thuận</h1> <!-- Tối ưu nội dung H1 duy nhất hiển thị đúng bản chất trang -->
+        <div class='navbar'>
+            <div class='logo'>
+                <img src="images/logo.png" alt="Logo Đặng Minh Thuận" width="100" height="100">
+            </div>
+            <div class='nav-link'>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="https://github.com/DangMinhThuan-creator" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>Đặng Minh Thuận</h1> <!-- Giữ duy nhất 1 thẻ h1 chuẩn SEO -->
     </header>
 
-    <main>
-        <section id="thong-tin-ca-nhan"> <!-- Sửa ID thành chuỗi viết thường không dấu, không khoảng trắng -->
-            <h2>Về tôi</h2>
-            <p>Xin chào, tôi là Đặng Minh Thuận, sinh viên năm 3 Khoa Công nghệ thông tin chuyên ngành IoT tại trường Đại học Gia Định.</p>
-            <p>Ngày sinh: 13/01/2005</p>
-            <p>Quê quán: Long Khánh, Đồng Nai</p>
+    <div class="page-layout">
+    <aside class="sidebar">
+        <h2>Mục lục</h2>
+        <ul>
+            <li><a href="#thong-tin-ca-nhan">Về tôi</a></li>
+            <li><a href="#so-thich">Sở thích</a></li>
+            <li><a href="#ki-nang">Kĩ năng</a></li>
+            <li><a href="#lo-trinh-hoc-tap">Lộ trình</a></li>
+            <li><a href="#ke-hoach-hoc-tap">Kế hoạch học tập</a></li>
+        </ul>
+    </aside>
+
+        <main>
+            <section id="thong-tin-ca-nhan"> <!-- Sửa ID thành chuỗi viết thường không dấu, không khoảng trắng -->
+                <h2>Về tôi</h2>
+                <p>Xin chào, tôi là Đặng Minh Thuận, sinh viên năm 3 Khoa Công nghệ thông tin chuyên ngành IoT tại trường Đại học Gia Định.</p>
+                <p>Ngày sinh: 13/01/2005</p>
+                <p>Quê quán: Long Khánh, Đồng Nai</p>
             
-            <figure>
-                <img src="images/anhdaidien.jpg" alt="Chân dung Đặng Minh Thuận - Sinh viên năm 3 trường Đại học Gia Định" width="200">
-                <figcaption>Đặng Minh Thuận</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/anhdaidien.jpg" alt="Chân dung Đặng Minh Thuận - Sinh viên năm 3 trường Đại học Gia Định" width="200">
+                    <figcaption>Đặng Minh Thuận</figcaption>
+                </figure>
 
-            <h3>Một số ngôn ngữ lập trình đã học</h3>
-            <dl>
-                <dt>Python</dt>
-                <dd>Ngôn ngữ lập trình phổ biến, dễ học, được sử dụng rộng rãi trong nhiều lĩnh vực như phát triển web, khoa học dữ liệu, trí tuệ nhân tạo và tự động hóa.</dd>
-                <dt>JavaScript</dt>
-                <dd>Ngôn ngữ lập trình chủ yếu được sử dụng để phát triển các ứng dụng web tương tác và động. Nó cho phép tạo ra các hiệu ứng trực quan, xử lý sự kiện và tương tác với người dùng trên trình duyệt.</dd>
-                <dt>HTML/CSS</dt>
-                <dd>HTML (Hypertext Markup Language) là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của trang web. CSS (Cascading Style Sheets) là ngôn ngữ định kiểu được sử dụng để tạo kiểu dáng và bố cục cho trang web.</dd>
-                <dt>C++</dt>
-                <dd>Ngôn ngữ lập trình mạnh mẽ, được sử dụng rộng rãi trong phát triển phần mềm hệ thống, trò chơi điện tử, ứng dụng nhúng và các ứng dụng yêu cầu hiệu suất cao.</dd>
-            </dl>
-        </section>
+                <h3>Một số ngôn ngữ lập trình đã học</h3>
+                <dl>
+                    <dt>Python</dt>
+                    <dd>Ngôn ngữ lập trình phổ biến, dễ học, được sử dụng rộng rãi trong nhiều lĩnh vực như phát triển web, khoa học dữ liệu, trí tuệ nhân tạo và tự động hóa.</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Ngôn ngữ lập trình chủ yếu được sử dụng để phát triển các ứng dụng web tương tác và động. Nó cho phép tạo ra các hiệu ứng trực quan, xử lý sự kiện và tương tác với người dùng trên trình duyệt.</dd>
+                    <dt>HTML/CSS</dt>
+                    <dd>HTML (Hypertext Markup Language) là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của trang web. CSS (Cascading Style Sheets) là ngôn ngữ định kiểu được sử dụng để tạo kiểu dáng và bố cục cho trang web.</dd>
+                    <dt>C++</dt>
+                    <dd>Ngôn ngữ lập trình mạnh mẽ, được sử dụng rộng rãi trong phát triển phần mềm hệ thống, trò chơi điện tử, ứng dụng nhúng và các ứng dụng yêu cầu hiệu suất cao.</dd>
+                </dl>
+            </section>
 
-        <section id="so-thich">
-            <h2>Sở thích</h2>
-            <ul>
-                <li>Chơi game</li>
-                <li>Nghe nhạc</li>
-                <li>Xem phim</li>
-            </ul>
-        </section>
+            <section id="so-thich">
+                <h2>Sở thích</h2>
+                <ul>
+                    <li>Chơi game</li>
+                    <li>Nghe nhạc</li>
+                    <li>Xem phim</li>
+                </ul>
+            </section>
 
-        <section id="ki-nang">
-            <h2>Kĩ năng lập trình</h2>
-            <ul>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>C++</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+            <section id="ki-nang">
+                <h2>Kĩ năng lập trình</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">HTML/CSS</div>
+                    <div class="skill-card">C++</div>
+                    <div class="skill-card">Git &amp; GitHub</div>
+                </div>
+            </section>
 
-        <section id="lo-trinh-hoc-tap">
-            <h2>Lộ trình học tập</h2>
-            <ol>
-                <li>Tốt nghiệp</li>
-                <li>Một học phần loại A</li>
-                <li>Một sản phẩm có thể đưa lên thị trường</li>
-            </ol>
-        </section>
+            <section id="lo-trinh-hoc-tap">
+                <h2>Lộ trình học tập</h2>
+                <ol>
+                    <li>Tốt nghiệp</li>
+                    <li>Một học phần loại A</li>
+                    <li>Một sản phẩm có thể đưa lên thị trường</li>
+                </ol>
+            </section>
 
-        <section id="ke-hoach-hoc-tap">
-            <table>
-                <caption>Bảng môn học học kỳ này</caption>
-                <thead>
-                    <tr>
-                        <th id="th-mon">Môn học</th>
-                        <th id="th-tc">Số TC</th>
-                        <th id="th-diem">Điểm mục tiêu</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td headers="th-mon">Lập trình Web</td>
-                        <td headers="th-tc">3</td>
-                        <td headers="th-diem">8.0</td>
-                    </tr>
-                    <tr>
-                        <td headers="th-mon">Internet vạn vật nâng cao</td>
-                        <td headers="th-tc">3</td>
-                        <td headers="th-diem">7.5</td>
-                    </tr>
-                    <tr>
-                        <td headers="th-mon">Pháp luật đại cương</td>
-                        <td headers="th-tc">2</td>
-                        <td headers="th-diem">7.0</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2" id="th-tong">Tổng tín chỉ</td>
-                        <td headers="th-diem th-tong">9 TC</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-    </main>
+            <section id="ke-hoach-hoc-tap">
+                <table>
+                    <caption>Bảng môn học học kỳ này</caption>
+                    <thead>
+                        <tr>
+                            <th id="th-mon">Môn học</th>
+                           <th id="th-tc">Số TC</th>
+                           <th id="th-diem">Điểm mục tiêu</th>
+                      </tr>
+                   </thead>
+                  <tbody>
+                       <tr>
+                            <td headers="th-mon">Lập trình Web</td>
+                            <td headers="th-tc">3</td>
+                            <td headers="th-diem">8.0</td>
+                        </tr>
+                        <tr>
+                           <td headers="th-mon">Internet vạn vật nâng cao</td>
+                            <td headers="th-tc">3</td>
+                           <td headers="th-diem">7.5</td>
+                        </tr>
+                        <tr>
+                            <td headers="th-mon">Pháp luật đại cương</td>
+                            <td headers="th-tc">2</td>
+                            <td headers="th-diem">7.0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" id="th-tong">Tổng tín chỉ</td>
+                            <td headers="th-diem th-tong">9 TC</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <h2>Thông tin liên hệ nhanh</h2>
-        <address>
+        <div class="footer-left">
+            <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
+        </div>
+            <div class="footer-right">
+            <address>
             Tel: 0363 856 521<br>
             Email: <a href="mailto:minhthuan.dang1301@gmail.com">minhthuan.dang1301@gmail.com</a>
-        </address>
-        <p>&copy; <time datetime="2026-09-15">2026</time> Đặng Minh Thuận. All rights reserved.</p>
+            </address>
+        </div>
     </footer>
 
 </body>

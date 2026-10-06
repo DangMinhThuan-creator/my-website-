@@ -1,0 +1,26 @@
+@use 'variables' as *;
+@use 'components' as *;
+
+.navbar {@include flex-center();justify-content: space-between;padding: $spacing 32px;background: $color-primary;}
+.nav-link {
+    ul {display: flex;gap: 25px;list-style: none;margin: 0;padding: 0;}
+    a {text-decoration: none;color: $color-secondary;margin-left: 24px;
+        &:hover {color: white;}
+    }
+}
+.hero {@include flex-center(column);justify-content: center;min-height: 300px;background: $color-hero;color: white;text-align: center;}
+.card-grid {display: flex;flex-wrap: wrap;gap: $spacing * 1.5;}
+.page-layout {display: grid;grid-template-areas: "main";grid-template-columns: 1fr;gap: $spacing * 2;max-width: 1100px;margin: 0 auto;padding: 0 $spacing;
+    main {grid-area: main;}
+}
+.sidebar {grid-area: sidebar;display: none;background: $color-light;padding: 24px;border-radius: $radius;align-self: start;
+    ul {list-style: none;margin: 0;padding: 0;}
+    li {margin-bottom: 10px;}
+}
+footer {@include flex-center();justify-content: space-between;padding: 20px 30px;background-color: $color-dark;color: #cbd5e1;
+    p {margin: 0;}
+    a {color: $color-secondary;
+        &:hover {color: white;}
+    }
+}
+.footer-right {display: flex;gap: 20px;}

@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+@mixin flex-center($direction: row) {display: flex;flex-direction: $direction;align-items: center;}
+@mixin card-style() {background: #fff;padding: $spacing;border-radius: $radius;box-shadow: $shadow;}
+.card { @include card-style();flex: 1;min-width: 250px;color: #333;}
+.btn-primary {display: inline-block;padding: 10px 20px;background-color: white;color: navy;border-radius: 4px;font-weight: 600;}
+.skills-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));gap: $spacing;}
+.skill-card {background: #e0f2fe;padding: 20px;border-radius: $radius;text-align: center;font-weight: bold;}
+table {border-collapse: collapse;width: 100%;}
+table, th, td {border: 1px solid #333;}
+th, td {padding: 10px 14px;text-align: left;}
+th {background-color: $color-table;}
+caption {font-weight: bold;margin-bottom: 8px;}
+tfoot td {font-weight: bold;background-color: $color-table;}
